@@ -1,0 +1,412 @@
+/*------------------------------------------------------------------
+Project:  OSR Connect  
+Version:  
+Last change:  
+Assigned to:  
+Primary use:  
+Edited By : Anjit pariyar
+-------------------------------------------------------------------*/
+
+/*//////////////////////////////////////////////////////////////////
+*/
+/*  [ YOUR COLOR GOES HERE ] */
+:root {
+  --primary-color: #0c3946;
+  --secondary-color: #303030;
+  --white: #fff;
+  --yellow: #d2a90e;
+}
+
+/* [ FONT ] */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/*//////////////////////////////////////////////////////////////////
+  [ REBOOT ]*/
+*,
+*:before,
+*:after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #666666;
+  height: 100%;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------------*/
+a:focus {
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* ------------------------------------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  margin: 0px;
+  list-style-type: none;
+}
+
+/* ------------------------------------ */
+input,
+textarea,
+label {
+  display: block;
+  outline: none;
+  border: none;
+}
+
+/* ------------------------------------ */
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+iframe {
+  border: none;
+}
+
+/* your style start */
+
+body,
+html {
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  color: #666666;
+  height: 100%;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+header {
+  position: relative;
+  background-color: #fff;
+}
+header nav {
+  display: flex;
+  padding: 25px 0;
+  gap: 20px;
+  align-items: center;
+}
+
+header li:nth-child(2) {
+  margin-left: auto;
+}
+header a {
+  display: inline-block;
+}
+header svg {
+  vertical-align: bottom;
+}
+
+main .screen {
+  position: relative;
+  background-color: var(--yellow);
+  width: 100%;
+  overflow: hidden;
+}
+
+.screen .row {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  flex-wrap: nowrap;
+}
+
+.screen aside {
+  padding-top: 120px;
+  margin-bottom: -20px;
+}
+
+.screen aside img {
+  width: auto;
+}
+.screen .flex {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 3em;
+}
+.screen .flex img {
+  height: 80px;
+}
+.screen p {
+  font-size: 36px;
+  line-height: 1;
+}
+.screen h2 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.main-image {
+  position: relative;
+  z-index: 1;
+  height: 600px;
+}
+.sec-image {
+  /* transform: translate(-96px, 50px); */
+  position: relative;
+  z-index: 0;
+  height: 630px;
+  transform: translate(-346px, 20px) rotate(-9deg);
+  animation: frame 0.4s ease-out 1s 1 forwards;
+}
+
+.absolute {
+  position: absolute;
+  right: -200px;
+  top: -60px;
+}
+
+.common-button {
+  border: 2px solid var(--white);
+  border-radius: 9px;
+  padding: 13px 30px;
+  color: var(--white);
+  font-weight: 600;
+}
+.common-button:hover {
+  background-color: var(--white);
+  color: var(--yellow);
+}
+
+@keyframes frame {
+  from {
+    transform: translate(-346px, 20px) rotate(-9deg);
+  }
+  to {
+    transform: translate(-96px, 50px) rotate(0deg);
+  }
+}
+
+footer {
+  background-color: #fff;
+}
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0px;
+  padding-bottom: 20px;
+}
+
+.box {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  /* animation: move 6s; */
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  font-size: 56px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes move {
+  0% {
+    top: 50px;
+  }
+  10% {
+    top: 0px;
+  }
+  40% {
+    top: -85px;
+  }
+  70% {
+    top: -170px;
+  }
+  100% {
+    top: -270px;
+  }
+
+  /* 100% {
+    top: -540px;
+  } */
+}
+@keyframes move-res {
+  0% {
+    top: 30px;
+  }
+  10% {
+    top: 0px;
+  }
+  40% {
+    top: -43px;
+  }
+  70% {
+    top: -86px;
+  }
+  100% {
+    top: -125px;
+  }
+
+  /* 100% {
+    top: -540px;
+  } */
+}
+
+.screen aside:first-child {
+  min-width: 706px;
+}
+
+.box-wrrapper {
+  height: 90px;
+  overflow: hidden;
+  margin-bottom: 150px;
+}
+
+footer p span {
+  color: #212121;
+}
+footer a {
+  color: currentColor;
+  text-decoration: none;
+}
+footer p span .sunbi {
+  color: #d12828;
+  text-decoration: none;
+}
+
+.screen {
+  height: 700px;
+}
+
+.image-wrapper {
+  margin-top: -610px;
+}
+
+.screen .row,
+.screen .container {
+  height: 100%;
+}
+
+.mobile-download {
+  display: none;
+}
+/* .mobile-download { */
+/* background-color: #fff; */
+/* padding: 30px 0; */
+/* } */
+
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+  .brand svg {
+    height: 50px;
+    width: auto;
+  }
+  header nav li:nth-child(2),
+  header nav li:last-child,
+  .image-wrapper {
+    display: none;
+  }
+  header nav {
+    justify-content: center;
+  }
+  .parallax svg {
+    height: 100px;
+    width: auto;
+  }
+  .absolute {
+    right: -100px;
+    top: -30px;
+  }
+  .parallax svg {
+    height: 250px;
+    width: auto;
+  }
+  .screen aside:first-child {
+    display: none;
+  }
+  .screen {
+    height: 500px;
+  }
+  .screen p {
+    font-size: 22px;
+    line-height: 1;
+  }
+  .box {
+    font-size: 36px;
+    /* animation-name: move-res; */
+  }
+  .box-wrrapper {
+    height: 40px;
+  }
+
+  footer .row {
+    padding-top: 30px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .social {
+    display: none;
+  }
+
+  .mobile-download {
+    display: flex;
+    gap: 12px;
+  }
+
+  .screen aside {
+    padding-top: 0;
+    margin-bottom: 0px;
+  }
+
+  .screen .row {
+    align-items: center;
+  }
+
+  .box-wrrapper {
+    margin-bottom: 50px;
+  }
+
+  .screen aside {
+    width: 100%;
+  }
+  .screen .flex {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
