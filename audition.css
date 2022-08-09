@@ -245,6 +245,9 @@ input[type="number"]::-webkit-outer-spin-button {
   color: #f3f3f3;
   text-decoration: none;
 }
+.link:hover {
+  color: #067fff;
+}
 .container {
   width: 1300px;
   margin: auto;
